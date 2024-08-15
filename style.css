@@ -1,0 +1,162 @@
+
+/* Importing Google font 'Poppins' */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Styling for the body element */
+body {
+    /* Setting the font family to 'Poppins' */
+    font-family: 'Poppins', sans-serif;
+
+    /* Creating a dark, rich gradient background */
+    background: linear-gradient(135deg, #111869 0%, #0c0f40 50%, #04246d 100%);
+
+    /* Centering the content horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Setting the height of the body to cover the entire viewport */
+    height: 100vh;
+
+    /* Removing default margin */
+    margin: 0;
+}
+
+/* Styling the age calculator container */
+.age-calculator {
+    /* Setting a background gradient with a calm, pastel tone */
+    background: linear-gradient(135deg, #c81194 0%, #7ea6eb 100%);
+
+    /* Adding padding inside the container */
+    padding: 30px;
+
+    /* Rounding the corners of the container */
+    border-radius: 15px;
+
+    /* Adding a subtle shadow for depth */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+    /* Centering the text inside the container */
+    text-align: center;
+
+    /* Setting a maximum width for the container */
+    max-width: 400px;
+
+    /* Ensuring the container takes full width on smaller screens */
+    width: 100%;
+}
+
+/* Styling the header inside the calculator */
+.age-calculator h2 {
+    /* Setting the font size */
+    font-size: 24px;
+
+    /* Changing the text color to white */
+    color: #ffffff;
+
+    /* Adding space below the header */
+    margin-bottom: 20px;
+}
+
+/* Styling the date input field */
+.age-calculator input[type="date"] {
+    /* Setting the background color of the input field */
+    background-color: #fcfcff;
+
+    /* Adding padding inside the input field */
+    padding: 12px;
+
+    /* Adding margin to create space around the input */
+    margin: 10px 0;
+
+    /* Setting the width of the input to full container width */
+    width: 100%;
+
+    /* Rounding the corners of the input field */
+    border-radius: 5px;
+
+    /* Setting the border color */
+    border: 1px solid #a6c1ee;
+
+    /* Ensuring proper box-sizing for padding and borders */
+    box-sizing: border-box;
+
+    /* Setting the font size for the input text */
+    font-size: 16px;
+
+    /* Changing the text color */
+    color: #333333;
+}
+
+/* Customizing the calendar icon inside the date input */
+.age-calculator input[type="date"]::-webkit-calendar-picker-indicator {
+    /* Changing the cursor to pointer on hover */
+    cursor: pointer;
+
+    /* Setting the background color for the calendar icon */
+    background-color: #a6c1ee;
+
+    /* Rounding the corners of the icon */
+    border-radius: 5px;
+}
+
+/* Removing unnecessary spin buttons and clear buttons */
+.age-calculator input[type="date"]::-webkit-inner-spin-button,
+.age-calculator input[type="date"]::-webkit-clear-button {
+    /* Hiding the spin and clear buttons */
+    display: none;
+}
+
+/* Styling the calculate button */
+.age-calculator button {
+    /* Adding padding inside the button */
+    padding: 12px;
+
+    /* Setting the width to full container width */
+    width: 90%;
+
+    /* Removing default border */
+    border: none;
+
+    /* Rounding the corners of the button */
+    border-radius: 7px;
+
+    /* Setting the background color for the button */
+    background-color: #970ab4;
+
+    /* Changing the text color to white */
+    color: white;
+
+    /* Setting the font size of the button text */
+    font-size: 18px;
+
+    /* Changing the cursor to pointer */
+    cursor: pointer;
+
+    /* Adding margin to create space above the button */
+    margin-top: 15px;
+
+    /* Adding transition for a smooth background change on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Changing the button background on hover */
+.age-calculator button:hover {
+    /* Setting a darker background color on hover */
+    background-color: #d346f0;
+}
+
+/* Styling the result text */
+.age-calculator p {
+    /* Adding margin to create space above the text */
+    margin-top: 25px;
+
+    /* Setting the font size of the result text */
+    font-size: 20px;
+
+    /* Changing the text color to white */
+    color: #ffffff;
+
+    /* Making the text bold */
+    font-weight: 600;
+}
